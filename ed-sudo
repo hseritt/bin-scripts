@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+SRCFILE="/etc/sudoers"
+TGTFILE="sudoers"
+EDIT_CMD="sudo visudo"
+
+source $HOME/bin/ed-env
+main

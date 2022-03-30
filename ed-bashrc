@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+SRCFILE="$HOME/.bashrc"
+TGTFILE="bashrc"
+EDIT_CMD="vi $SRCFILE"
+
+source $HOME/bin/ed-env
+main

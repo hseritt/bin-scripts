@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+function git_push() {
+    cd $PROJ_FOLDER
+    git add --all
+    git commit -m "Modified ${TGTFILE}"
+    git push origin main
+    cd -
+}
+
+
+function run_command() {
+    echo "Editing ${SRCFILE}"
+    sleep 1
+    $EDIT_CMD
+}
+
+
+function copy_to_project() {
+    echo "Copying source file to project ..."
+    sleep 1
+    $COPY_TO_PROJ
+    echo "  Done."
+    sleep 1
+}
+
+
+function set_permissions() {
+    echo "Setting permissions ..."
+    sleep 1
+    $SET_PERMS
+    echo "  Done."
+    sleep 1
+}
+
+
+function commit_push() {
+    sleep 1
+    echo "Committing and pushing to Github ..."
+    git_push
+    sleep 1
+    echo "  Done."
+    echo "Exiting."
+}
+
+
+function main() {
+    clear
+    run_command
+    copy_to_project
+    set_permissions
+    commit_push   
+}
+
+
+# Leave as-is
+PROJ_FOLDER="$HOME/Development/Configs"
+SET_PERMS="sudo chown -v $USER:$USER $PROJ_FOLDER/$TGTFILE"
+COPY_TO_PROJ="sudo cp -rfv $SRCFILE $PROJ_FOLDER/$TGTFILE"

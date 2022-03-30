@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+/home/devuser/apps/bzflag/2.4.20/bin/bzflag
+

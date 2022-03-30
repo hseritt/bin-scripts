@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+TS=$(date +%d%h%y-%H%M%S)
+# echo $ts
+
+GIT="/usr/bin/git"
+
+repos=(
+    "/home/devuser/Coursework/ZTM-CompleteWebDeveloper"
+)
+
+for dir in "${repos[@]}"
+do
+    echo "Pushing repo at ${dir} ..."
+    cd $dir
+    $GIT add --all 
+    $GIT commit -m "Auto push to repo at ${TS}"
+    $GIT push origin main
+done
