@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 TS=$(date +%d%h%y-%H%M%S)
-# echo $ts
 
 GIT="/usr/bin/git"
 
+# must use a full path in the list
 repos=(
     "/home/devuser/Coursework/ZTM-CompleteWebDeveloper"
     "/home/devuser/bin"
