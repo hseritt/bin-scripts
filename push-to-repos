@@ -5,7 +5,7 @@ TS=$(date +%d%h%y-%H%M%S)
 GIT="/usr/bin/git"
 
 # must use a full path in the list
-repos=(
+declare -a repos=(
     "/home/devuser/Coursework/ZTM-CompleteWebDeveloper"
     "/home/devuser/bin"
 )
