@@ -8,6 +8,7 @@ GIT="/usr/bin/git"
 declare -a repos=(
     "/home/devuser/Coursework/ZTM-CompleteWebDeveloper"
     "/home/devuser/bin"
+    "/home/devuser/Development/resume-builder"
 )
 
 for dir in "${repos[@]}"
