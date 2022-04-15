@@ -9,6 +9,7 @@ declare -a repos=(
     "/home/devuser/Coursework/ZTM-CompleteWebDeveloper"
     "/home/devuser/bin"
     "/home/devuser/Development/resume-builder"
+    "/home/devuser/Coursework/ZTM-CompleteReactDeveloper"
 )
 
 for dir in "${repos[@]}"
