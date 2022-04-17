@@ -10,6 +10,7 @@ declare -a repos=(
     "/home/devuser/bin"
     "/home/devuser/Development/resume-builder"
     "/home/devuser/Coursework/ZTM-CompleteReactDeveloper"
+    "/home/devuser/Development/Sandbox/css-stylings"
 )
 
 for dir in "${repos[@]}"
