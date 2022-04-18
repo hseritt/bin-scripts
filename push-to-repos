@@ -11,6 +11,7 @@ declare -a repos=(
     "/home/devuser/Development/resume-builder"
     "/home/devuser/Coursework/ZTM-CompleteReactDeveloper"
     "/home/devuser/Development/Sandbox/css-stylings"
+    "/home/devuser/Development/Sandbox/site-designs"
 )
 
 for dir in "${repos[@]}"
